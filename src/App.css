@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Ubuntu:wght@300;400&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'EB Garamond';
+}
+
+
+.App {
+  display:grid; 
+  grid-template-rows: auto 1fr auto; 
+  min-height:100vh; 
+  max-width: 1920px;
+}
+
+.homeContainer{
+  background-image: url('../public/Home\ 1.jpeg');
+  /* margin-top: 80px; */
+  max-width:1920px;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 180px);
+}
+
+.cajaRandom{
+  /* min-height: 50vh; */
+  display: flex;
+  flex-direction: row;
+  background-color: #e7e2d5;
+  /* min-height: calc(100% - 100px - 60px); */
+  /* border: 1px solid rgb(99, 96, 96); */
+  width:92%;
+  font-size:40px;
+  /* opacity:0.45; */
+  margin-left:4%;
+  /* flex: 1; */
+}
+
+.navbar{
+  /* position: fixed; */
+  z-index: 999;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+  width: 100%;
+  background-color: #261a0f;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.navbarLogo{
+  width: 80px;
+}
+
+.navInactive{
+  text-decoration: none;
+  font-size: 16px;
+  color: #FFF8EA;
+}
+
+.navActive{
+  font-size: 18px;
+  color: #FFF8EA;
+}
+
+.footer{
+  display:flex;
+  align-items: center;
+  padding-left: 4%;
+  padding-right: 4%;
+  background-color: #1A1A1A;
+  color: #E7E2D5;
+  font-size: 20px;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.footerLogo{
+  width: 100px;
+}
+
+.card{
+  margin: 0px;
+  transition: 150ms;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.card-container{
+  height: 190px;
+  background-color: white;
+  margin:5px;
+  border: 1px solid rgb(170, 170, 170);
+  box-shadow: 0 0 2px rgb(145, 144, 144);
+  padding: 2px;
+  transition: 200ms;
+  display: flex;
+  width: 13.5%;
+  min-width: 230px;
+  max-width: 300px;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 2px;
+  box-shadow: 2px;
+}
+
+.datePickerWrapper{
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border:1px rgb(97, 95, 95) solid;
+  border-radius: 4px;
+  width:235px;
+  height: 120px;
+  padding: 10px;
+}
+
+.roomsContainer{
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vw;
+  min-height: 150px;
+  margin: 20px auto;
+  font-size: 18px;
+}
+
+.homeSectionWrapper{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size:18px;
+}
+
+.hamburgerButton{
+  display:none;
+  color:white;
+}
+
+@media(max-width:960px){
+  .navButton{
+    display: none;
+  }
+  .hamburgerButton{
+    display: block;
+  }
+}
+
