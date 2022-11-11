@@ -1,6 +1,6 @@
 import { useEffect,useState } from "react"
+import { getItems } from "../../Data/api";
 
-import { createItem, getItems } from "../Data/api"
 import Room from "./Room"
 
 const RoomsContainer = () => {
@@ -19,7 +19,7 @@ const RoomsContainer = () => {
   
   if(loading){
     return(
-      <div style={{fontSize:'50px'}}> L O A D I N G . . . </div>
+      <div className='roomsContainer' style={{fontSize:'50px'}}> L O A D I N G . . . </div>
     )
   }
   return (
